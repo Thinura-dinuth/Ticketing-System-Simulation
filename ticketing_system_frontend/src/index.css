@@ -1,0 +1,130 @@
+body {
+  font-family: Poppins, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.configuration-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.ticket-display {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.form-fields{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.error-text{
+  color: red;
+}
+
+.label-box{
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  flex-direction: column;
+}
+
+.label-name{
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type ="number"]{
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+.error-icon{
+  position: relative;
+  top: 6px;
+  padding-right: 5px;
+}
+.error{
+  color: red;
+}
+
+.config-details p {
+  margin: 5px 0;
+}
+
+.control-panel {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.control-panel button{
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.log-display {
+  margin-top: 20px;
+  height: 300px;
+  overflowY: auto;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.log-display h2{
+  margin-top: 0;
+}
+
+.ticket-updates {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.save-button {
+  display: block;
+  position: relative;
+  width: 100%;
+  max-width: 250px;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  margin-top: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  left: 15px;
+}
+
+.save-button:hover {
+  background-color: #0056b3;
+}

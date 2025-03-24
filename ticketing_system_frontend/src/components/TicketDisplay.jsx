@@ -1,0 +1,26 @@
+import PropTypes from 'prop-types';
+import ControlPanel from './ControlPanel.jsx';
+import LogDisplay from './LogDisplay.jsx';
+
+export default function TicketDisplay({ config, logs, onStart, onStop }) {
+    return (
+        <div className="ticket-display">
+            <h1>Ticket Availability</h1>
+            <p>Total Tickets: {config.totalTickets}</p>
+            <p>Ticket Release Rate: {config.ticketReleaseRate}</p>
+            <p>Customer Retrieval Rate: {config.customerRetrievalRate}</p>
+            <p>Max Ticket Capacity: {config.maxTicketCapacity}</p>
+            <p>Number of Customers: {config.numberOfCustomers}</p>
+            <p>Number of Vendors: {config.numberOfVendors}</p>
+            <ControlPanel onStart={onStart} onStop={onStop}/>
+            <LogDisplay logs={logs}/>
+        </div>
+    );
+}
+
+TicketDisplay.propTypes = {
+    config: PropTypes.object.isRequired,
+    logs: PropTypes.arrayOf(PropTypes.string).isRequired,
+    onStart: PropTypes.func.isRequired,
+    onStop: PropTypes.func.isRequired,
+};
